@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 36px;
+  height: 80vh;
+  display: flex;
+  width: 66vw;
+  margin: auto;
+}
+
+.home{
+  
+}
+.img {
+  height: 100%;
+}
+
+.body {
+  margin-left: 52px;
+}
+
+h1 {
+  margin: 40px 0 24px 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.text{
+  font-size: 16px;
+  font-weight: 400;
+}
+h2 {
+  margin: 40px 0 12px 0;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.description {
+  margin: 40px 0 40px 0;
+  padding: 12px 24px 12px 24px;
+  background-color: #F3F4F6;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.description div :first-of-type{
+
+margin-bottom: 6px;
+}
+
+.description div :last-of-type{
+  font-weight: 600;
+}
+.price{
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+button {
+  padding: 8px 32px 8px 32px;
+}
+button img{
+  height: 10px;
+  margin-right: 6px;
+}
