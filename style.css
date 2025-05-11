@@ -82,8 +82,18 @@ margin-bottom: 6px;
 }
 button {
   padding: 8px 32px 8px 32px;
+  border-radius: 7px;
+   outline: none;
+  box-shadow: none;
+  color: inherit;
+  font: inherit;
+  border: none;
 }
 button img{
   height: 10px;
   margin-right: 6px;
+}
+
+.color{
+  background-color: #652CD1;
 }
