@@ -23,9 +23,10 @@ body {
 .container {
   padding: 36px;
   height: 65vh;
-  width: 60vw;
+  min-height: 65vh;
+  width: 60%;
   display: flex;
-  
+  min-width: 50vw;
   margin: auto;
 }
 
@@ -38,6 +39,7 @@ body {
 
 .body {
   margin-left: 52px;
+  min-width: 600px;
 }
 
 h1 {
