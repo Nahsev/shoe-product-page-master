@@ -22,9 +22,9 @@ body {
 
 .container {
   padding: 36px;
-  height: 65vh;
+  height: 80vh;
   min-height: 65vh;
-  width: 60%;
+  width: 40%;
   display: flex;
   min-width: 50vw;
   margin: auto;
@@ -51,6 +51,7 @@ h1 {
 .text{
   font-size: 16px;
   font-weight: 400;
+  width: 70%;
 }
 h2 {
   margin: 40px 0 12px 0;
