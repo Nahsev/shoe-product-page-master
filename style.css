@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 100vh;
+  width: 100vw;
   font-family: "Outfit", sans-serif;
 }
 
@@ -20,83 +20,125 @@ body {
   text-decoration: none;
 }
 
-.container {
+
+
+.container{
+  width: 100vw;
   padding: 36px;
-  height: 80vh;
-  min-height: 65vh;
-  width: 40%;
-  display: flex;
-  min-width: 50vw;
-  margin: auto;
+  display: grid;
+  grid-template-areas: 'img body';
+  width: calc(100vw-72px);
 }
 
-.home{
-  
-}
-.img {
- 
+
+.img{
+  grid-area: img;
+  border-radius: 7px;
+  height: 100%;
+  max-height: 650px;
+  object-fit: contain;
 }
 
-.body {
+.body{
   margin-left: 52px;
-  min-width: 600px;
+  grid-area: body;
 }
-
-h1 {
-  margin: 40px 0 24px 0;
+.home{
+  font-size: 14px;
+  font-weight: 600;
+}
+.home span{
+  font-weight: 300;
+}
+.text{
+margin: 40px 0;
+}
+.text h1{
+  margin-bottom: 24px;
   font-size: 32px;
   font-weight: 600;
 }
-
-.text{
+.text p{
   font-size: 16px;
   font-weight: 400;
-  width: 70%;
 }
-h2 {
-  margin: 40px 0 12px 0;
+h2{
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-ul {
+li{
+  margin: 10px;
   list-style-position: inside;
+  font-size: 16px;
+  font-weight: 400;
 }
-
-.description {
-  margin: 40px 0 40px 0;
-  padding: 12px 24px 12px 24px;
-  background-color: #F3F4F6;
+.description{
+  margin: 40px 0;
+  padding: 24px 6px;
   display: flex;
+  width: 50%;
   justify-content: space-between;
-  width: 60%;
+  background-color: #F9FAFB;
 }
 
-.description div :first-of-type{
-
-margin-bottom: 6px;
-}
-
-.description div :last-of-type{
+.description p{
+  font-size: 16px;
   font-weight: 600;
 }
+
+.blanquita{
+  color: #D2D5DA;
+  margin-bottom: 6px;
+}
+
 .price{
-  font-weight: 600;
   display: flex;
   align-items: center;
+  
+  
 }
 button {
-  padding: 8px 32px 8px 32px;
-  border-radius: 7px;
-   outline: none;
-  box-shadow: none;
-  color: inherit;
-  font: inherit;
+  
+  padding: 8px 32px;
+  font-size: 16px;
+  font-weight: 600;
   border: none;
+  border-radius: 5px;
 }
-button img{
-  height: 10px;
-  margin-right: 6px;
-}
-
 .color{
   background-color: #652CD1;
+  margin-right: 10px;
+}
+
+button img{
+height: 16px;
+margin-right: 6px;
+
+
+}
+
+
+@media (max-width:1024px){
+  .description{
+    width: 80%;
+  }
+}
+
+
+@media (max-width:640px){
+  .container{
+    grid-template-areas: 'img'
+    'body';
+    
+  }
+  .img{
+    width: 100%;
+    border-radius: 7px;
+  }
+  .description{
+    width: 90%;
+  }
+  
 }
